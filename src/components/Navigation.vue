@@ -17,7 +17,7 @@
 <style scoped>
     #brand {
         font-family: 'PT Sans', sans-serif;
-        margin-left: 8.8rem;
+        padding-left: 8.8rem;
     }
     #font {
         font-size: 1.1em;

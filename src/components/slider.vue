@@ -78,7 +78,7 @@
                     <div class="container">
                         <div class="">
                             <div class="col-sm-12 col-md-12 text-center" id="description">
-                                <h1>Subscribe to our newsletter</h1>
+                                <h1>Thank you for your time!</h1>
                                 <p>Kindly subscribe for more details on our first version release.</p>
                             </div>
                             
@@ -87,11 +87,11 @@
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" id="icon" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span><i class="fas fa-chevron-left"></i>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span><i class="fas fa-chevron-left" id="icons"></i>
                 <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" id="icon" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span><i class="fas fa-chevron-right"></i>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span><i class="fas fa-chevron-right" id="icons"></i>
                 <span class="sr-only">Next</span>
             </a>
         </div>
@@ -109,8 +109,9 @@
         height: 55vh;
         
     }
-    #icon {
+    #icons {
         color: black;
+        font-size: 1.5em;
     }
     #description {
         padding-top: 8rem;
@@ -118,12 +119,24 @@
     #description h1 {
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
-        font-size: 2.94rem;
+        font-size: 40px;
+        color: black;
+        line-height: 54.47px;
+    }
+    #description p {
+        font-size: 22px;
+        color: #535357;
+        padding-top: 10px;
+        line-height: 25px;
     }
     img {
         padding-top: 5rem;
         padding-left: 8rem;
         height: 23rem;
         width: 35rem;
+    }
+    .row {
+        width: 1186px;
+        height: 394px;
     }
 </style>
