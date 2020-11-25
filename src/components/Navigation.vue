@@ -1,10 +1,11 @@
 <template>
     <div>
-
-        <!-- As a heading -->
-        <nav class="navbar navbar-light" id="nav">
-            <span class="navbar-brand mb-0 h1" id="brand"><i class="fas fa-plus-circle ml-5 mr-2" id="font"></i> HEALTHNOW</span>
+            <!-- As a link -->
+        <nav class="navbar navbar-light" id="navbar">
+            <a class="navbar-brand" href="#"><i class="fas fa-plus" id="icon"></i> HEALTHNOW</a>
         </nav>
+
+        
     </div>
 </template>
 
@@ -15,12 +16,19 @@
 </script>
 
 <style scoped>
-    #nav {
+    #navbar {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        height: 80px;
         background: #F5F5F5;
-        padding-left: 160px;
+        padding-left: 3rem;
     }
-    
-    #font {
-        font-size: 1.1em;
+    #icon {
+        border-radius: 40px;
+        background: #2A5FFC;
+        color:white;
+        padding: 3px;
+        font-size: 19px;
     }
 </style>

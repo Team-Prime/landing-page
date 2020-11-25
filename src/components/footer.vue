@@ -1,11 +1,15 @@
 <template>
-    <div class="footer text-center container-fluid">
-        <h1 class="text-white mb-4">Subscribe to our newsletter</h1>
+    <div>
+        <div class="footer">
+            <h1>Subscribe to our newsletter</h1>
 
-        <input type="text" placeholder="enter email address">
-        <button class="button mb-3">Subscribe</button>
+            <input type="email" name="email" class="form-control" placeholder="enter email address">
+            <button class="btn">Subscribe</button>
 
-        <p class="text-white">We will let you know when we launch!</p>
+            <p>We will let you know when we launch!</p>
+
+            <hr>
+        </div>
     </div>
 </template>
 
@@ -15,52 +19,40 @@
     }
 </script>
 
-<style scoped>
+<style lang="css" scoped>
     .footer {
+        height: 314px;
         background: black;
-        padding: 3rem 0;
-        height: 37vh;
+        padding-top: 2rem;
+        text-align: center;
     }
 
-    input {
-        /* padding: 1em 6em; */
-        padding-top: 1em;
-        padding-bottom: 1em;
-        padding-right: 13em;
-        padding-left: 1em;
-        background: black;
+    h1 {
+        text-align: center;
+        font-size: 25px;
         color: white;
-        border-radius: 2px;
-        border: 1px solid white;
-        outline: none;
+        line-height: 34.05px;
+        margin-bottom: 34.05px;
+    }
+    input[type="email"] {
+        margin-left: 3rem;
+        width: 18rem;
     }
     button {
-        padding-top: 1em;
-        padding-bottom: 1em;
-        padding-left: 2em;
-        padding-right: 2em;
-        margin:0 0.1em;
-        border-radius: 2px;
-        box-sizing: border-box;
-        text-decoration:none;
-        font-family:'Roboto',sans-serif;
-        font-weight:400;
-        color:#FFFFFF;
-        background-color:#3369ff;
-        box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
-        text-align:center;
-    }
-    input[type="text"]::placeholder {       
-        /* Firefox, Chrome, Opera */ 
-        text-align: left; 
         color: white;
-        font-family: 'PT Sans', sans-serif;
-    } 
-    button:focus {
-        outline: none;
+        background: #2A5FFC;
+        margin: 4px 0;
     }
     p {
-        font-size: 1.1em;
-        font-family:'Roboto',sans-serif;
+        color: #FFFFFF;
+        margin-top: 1rem;
+        font-size: 18.75px;
+    }
+    hr {
+        background: #FFFFFF;
+        margin: 0 auto;
+        height: 1px;
+        width: 11rem;
+        margin-top: 4rem;
     }
 </style>
