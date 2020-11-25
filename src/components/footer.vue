@@ -35,13 +35,13 @@
         margin-bottom: 34.05px;
     }
     input[type="email"] {
-        margin-left: 3rem;
-        width: 18rem;
+        margin: 0 auto;
+        width: 22rem;
     }
     button {
         color: white;
         background: #2A5FFC;
-        margin: 4px 0;
+        margin: 4px auto;
     }
     p {
         color: #FFFFFF;
@@ -54,5 +54,101 @@
         height: 1px;
         width: 11rem;
         margin-top: 4rem;
+    }
+
+    /* Footer 768px media query */
+    @media screen and (min-width: 768px) {
+        .footer {
+            height: 319px;
+            background: black;
+            padding-top: 3rem;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: white;
+            line-height: 34.05px;
+            margin-bottom: 50px;
+            font-weight: 700;
+            font-style: normal;
+        }
+        input[type="email"] {
+            margin: 0 auto;
+            width: 32rem;
+            background: #000000;
+            color: white;
+            padding: 1.8em 2em;
+        }
+        button {
+            position:relative;
+            bottom: 3.9rem;
+            left: 10rem;
+            color: white;
+            background: #2A5FFC;
+            margin: 1px auto;
+            padding: .7em 2.2em;
+            font-family: 'Roboto', sans-serif;
+            font-size: 22px;
+            border: none;
+        }
+        p {
+            color: #FFFFFF;
+            /* margin-top: 1rem; */
+            font-size: 18.75px;
+        }
+        hr {
+            display: none;
+        }
+    }
+
+
+
+    /* Footer 768px media query */
+    @media screen and (min-width: 1025px) {
+        .footer {
+            height: 319px;
+            background: black;
+            padding-top: 3rem;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: white;
+            line-height: 34.05px;
+            margin-bottom: 50px;
+            font-weight: 700;
+            font-style: normal;
+        }
+        input[type="email"] {
+            margin: 0 auto;
+            width: 32rem;
+            background: #000000;
+            color: white;
+            padding: 1.8em 2em;
+        }
+        button {
+            position:relative;
+            bottom: 3.9rem;
+            left: 10rem;
+            color: white;
+            background: #2A5FFC;
+            margin: 1px auto;
+            padding: .7em 2.2em;
+            font-family: 'Roboto', sans-serif;
+            font-size: 22px;
+            border: none;
+        }
+        p {
+            color: #FFFFFF;
+            /* margin-top: 1rem; */
+            font-size: 18.75px;
+        }
+        hr {
+            display: none;
+        }
     }
 </style>

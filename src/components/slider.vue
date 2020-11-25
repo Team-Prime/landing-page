@@ -13,7 +13,7 @@
                         <div class="col-sm-12 col-md-12 col-lg-6">
                             <img src="@/assets/svgs/First.svg" alt="First SVG Illustration" class="img-fluid">
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="col-sm-12 col-md-12 col-lg-6" id="description">
                             <h1>Everything is horrible, it doesn't have to be for you</h1>
                             <p>Talk and connect with professionals without geographical limitations</p>
                         </div>
@@ -24,7 +24,7 @@
                         <div class="col-sm-12 col-md-12 col-lg-6">
                             <img src="@/assets/svgs/second.svg" alt="Second SVG Illustration" class="img-fluid">    
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="col-sm-12 col-md-12 col-lg-6" id="description">
                             <h1>Write, discuss and share your story</h1>
                             <p>Share your experience, network and meet new people</p>
                         </div>
@@ -35,7 +35,7 @@
                         <div class="col-sm-12 col-md-12 col-lg-6">
                             <img src="@/assets/svgs/third.svg" alt="Third SVG Illustration" class="img-fluid">
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="col-sm-12 col-md-12 col-lg-6" id="description">
                             <h1>Event and Discussion Board</h1>
                             <p>Create events and discussion boards with friends and professionals</p>
                         </div>
@@ -46,7 +46,7 @@
                         <div class="col-sm-12 col-md-12 col-lg-6">
                             <img src="@/assets/svgs/fourth.svg" alt="First SVG Illustration" class="img-fluid">
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="col-sm-12 col-md-12 col-lg-6" id="description">
                             <h1>Be the first to know</h1>
                             <p>Get updates about diseases outbreak and tips to protecting yourself and family</p>
                         </div>
@@ -58,7 +58,7 @@
                         <div class="col-sm-12 col-md-12 col-lg-6">
                             <img src="@/assets/svgs/fifth.svg" alt="First SVG Illustration" class="img-fluid">
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="col-sm-12 col-md-12 col-lg-6" id="description">
                             <h1>Resource Library</h1>
                             <p>Looking for anything? Our resource library might be helpful</p>
                         </div>
@@ -67,8 +67,8 @@
                 <div class="carousel-item">
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-12">
-                            <h1>Thank you for your time</h1>
-                            <p>Kindly subscribe for more details on our first version release</p>
+                            <h1 class="text-center">Thank you for your time</h1>
+                            <p class="text-center">Kindly subscribe for more details on our first version release</p>
                         </div>
                     </div>
                 </div>
@@ -121,5 +121,84 @@
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         color: #535357;
+    }
+
+
+    /* Media query for 768 */
+    @media screen and (min-width: 768px) {
+        img {
+            width: 322.49px;
+            height: 209.86px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #slider {
+            height: 61vh;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            padding-right: 3rem;
+            padding-left: 4rem;
+        }
+        h1 {
+            font-size: 40px;
+            text-align: center;
+            line-height: 54.47px;
+            margin-top: 2em;
+            font-weight: 700;
+            margin-bottom: 1.1em;
+            font-family: 'Open Sans', sans-serif;
+        }
+        p {
+            margin-bottom: 4em;
+            font-size: 22px;
+            line-height: 29.96px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            color: #535357;
+            text-align: center;
+        }
+        #description {
+            padding: 0 5rem;
+        }
+    }
+
+    /* Media query for min-width 1025px */
+    @media screen and (min-width: 1025px) {
+        img {
+            width: 50rem;
+            display: block;
+            position: relative;
+            left: 44.65rem;
+            right: 7.5%;
+            /* padding-top:1rem; */
+            bottom: -25px;
+        }
+        #slider {
+            height: 61vh;
+        }
+        h1 {
+            font-size: 40px;
+            line-height: 54.47px;
+            font-weight: 700;
+            margin-bottom: 1.1em;
+            font-family: 'Open Sans', sans-serif;
+            text-align: left;
+        }
+        p {
+            text-align: left;
+            font-size: 22px;
+            line-height: 35px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            color: #535357;
+        }
+        #description {
+            position: absolute;
+            right: 44.65rem;
+            left: 7.5%;
+            /* top: 0; */
+            top: -45px;
+        }
     }
 </style>

@@ -31,4 +31,12 @@
         padding: 3px;
         font-size: 19px;
     }
+    
+    /* Media query for Navigation */
+    @media screen and (min-width: 1025px) {
+         #navbar {
+            
+            padding-left: 16rem;
+        }
+    }
 </style>
