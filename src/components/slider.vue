@@ -106,37 +106,15 @@
 
 <style scoped>
     #carousel {
-        height: 55vh;
-        
-    }
-    #icons {
-        color: black;
-        font-size: 1.5em;
+        min-height: 55vh;
+        padding-top: 3em;
     }
     #description {
-        padding-top: 8rem;
-    }
-    #description h1 {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-        font-size: 40px;
-        color: black;
-        line-height: 54.47px;
-    }
-    #description p {
-        font-size: 22px;
-        color: #535357;
-        padding-top: 10px;
-        line-height: 25px;
+        padding-top: 80px;
     }
     img {
-        padding-top: 5rem;
-        padding-left: 8rem;
-        height: 23rem;
-        width: 35rem;
-    }
-    .row {
-        width: 1186px;
-        height: 394px;
+        width: 414.14px;
+        height: 278.45px;
+        margin-left: 150px;
     }
 </style>
