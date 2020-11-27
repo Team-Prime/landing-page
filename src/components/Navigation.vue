@@ -2,7 +2,7 @@
     <div>
             <!-- As a link -->
         <nav class="navbar navbar-light" id="navbar">
-            <a class="navbar-brand" href="#"><i class="fas fa-plus mr-3 ml-3" id="icon"></i> HEALTHNOW</a>
+            <a class="navbar-brand" href="#"><i class="fas fa-plus mr-3 ml-0" id="icon"></i> HEALTHNOW</a>
         </nav>
 
         

@@ -183,7 +183,7 @@
         #last {
             text-align: center;
             padding: 0;
-            margin: 0 auto 5rem auto;
+            margin: -3rem auto 5rem auto;
             width: 100%;
         }
         
