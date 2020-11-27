@@ -35,7 +35,7 @@
     /* Media query for Navigation */
     @media screen and (min-width: 768px) {
          #navbar {
-            padding-left: 8em;
+            padding-left: 13em;
         }
     }
 </style>
