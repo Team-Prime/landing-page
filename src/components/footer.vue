@@ -21,39 +21,41 @@
 
 <style lang="css" scoped>
     .footer {
-        height: 314px;
+        height: 200px;
         background: black;
-        padding-top: 2rem;
+        padding-top: 1rem;
         text-align: center;
     }
 
     h1 {
         text-align: center;
-        font-size: 25px;
+        font-size: 20px;
         color: white;
-        line-height: 34.05px;
-        margin-bottom: 34.05px;
+        margin-bottom: 18.05px;
     }
     input[type="email"] {
         margin: 0 auto;
-        width: 22rem;
+        width: 15rem;
     }
     button {
         color: white;
         background: #2A5FFC;
-        margin: 4px auto;
+        position: relative;
+        font-size: 12px;
+        bottom: 38.3px;
+        left: 80px;
+        padding: 9.4px 15px;
     }
     p {
         color: #FFFFFF;
-        margin-top: 1rem;
-        font-size: 18.75px;
+        font-size: 14.75px;
     }
     hr {
         background: #FFFFFF;
         margin: 0 auto;
         height: 1px;
-        width: 11rem;
-        margin-top: 4rem;
+        width: 8rem;
+        margin-top: 18px;
     }
 
     /* Footer 768px media query */

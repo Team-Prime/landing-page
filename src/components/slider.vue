@@ -3,9 +3,12 @@
         <!-- Carousel -->
         <div id="mednow" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#mednow" data-slide-to="0" class="active"></li>
+                <li data-target="#mednow" data-slide-to="1"></li>
+                <li data-target="#mednow" data-slide-to="2"></li>
+                <li data-target="#mednow" data-slide-to="3" class="active"></li>
+                <li data-target="#mednow" data-slide-to="4"></li>
+                <li data-target="#mednow" data-slide-to="5"></li>
             </ol>
             <div class="carousel-inner" id="slider">
                 <div class="carousel-item active">
@@ -65,7 +68,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="row">
+                    <div class="row mt-4">
                         <div class="col-sm-12 col-md-12 col-lg-12">
                             <h1 class="text-center">Thank you for your time</h1>
                             <p class="text-center">Kindly subscribe for more details on our first version release</p>
@@ -75,11 +78,11 @@
             </div>
             <a class="carousel-control-prev" href="#mednow" role="button" data-slide="prev">
                 <!-- <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black;"></span> -->
-                <i class="fas fa-chevron-left carousel-control-prev-icon" aria-hidden="true" style="color: black;"></i>
+                <i class="fas fa-chevron-left carousel-control-prev-icon" aria-hidden="true" style="color: black;" id="icon"></i>
                 <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#mednow" role="button" data-slide="next">
-                <i class="fas fa-chevron-right carousel-control-prev-icon" aria-hidden="true" style="color: black;"></i>
+                <i class="fas fa-chevron-right carousel-control-prev-icon" aria-hidden="true" style="color: black;" id="icon"></i>
                 <span class="sr-only">Next</span>
             </a>
         </div>
@@ -94,35 +97,46 @@
 
 <style scoped>
     img {
-        width: 12em;
+        width: 200px;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
     #slider {
-        height: 65vh;
-        padding-top: 4rem;
+        height: 58vh;
+        padding-top: 2rem;
         padding-bottom: 4rem;
-        padding-right: 2rem;
-        padding-left: 3rem;
+        text-align: center;
     }
     h1 {
-        font-size: 22px;
+        font-size: 18px;
         text-align: center;
-        margin-top: 2em;
+        margin: 2em auto 1.1rem auto;
         font-weight: 700;
-        margin-bottom: 1.1em;
+        width: 15.5rem; 
         font-family: 'Open Sans', sans-serif;
+        padding: 0 0 0 0;
     }
     p {
         margin-bottom: 4em;
-        font-size: 16px;
-        line-height: 21.79px;
+        font-size: 15px;
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         color: #535357;
+        width: 300px;
+        margin: 0 auto;
     }
-
+    #icon {
+        position: relative;
+        bottom: 4rem;
+    }
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        list-style-type: circle;
+        color: black;
+    }
 
     /* Media query for 768 */
     @media screen and (min-width: 768px) {
