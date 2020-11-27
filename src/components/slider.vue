@@ -17,8 +17,8 @@
                             <img src="@/assets/svgs/First.svg" alt="First SVG Illustration" class="img-fluid">
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-6" id="description">
-                            <h1>Everything is horrible, it doesn't have to be for you</h1>
-                            <p>Talk and connect with professionals without geographical limitations</p>
+                            <h1 id="multiple">Everything is horrible, it doesn't have to be for you</h1>
+                            <p id="multiple">Talk and connect with professionals without geographical limitations</p>
                         </div>
                     </div>
                 </div>
@@ -28,8 +28,8 @@
                             <img src="@/assets/svgs/second.svg" alt="Second SVG Illustration" class="img-fluid">    
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-6" id="description">
-                            <h1>Write, discuss and share your story</h1>
-                            <p>Share your experience, network and meet new people</p>
+                            <h1 id="multiple">Write, discuss and share your story</h1>
+                            <p id="multiple">Share your experience, network and meet new people</p>
                         </div>
                     </div>
                 </div>
@@ -39,8 +39,8 @@
                             <img src="@/assets/svgs/third.svg" alt="Third SVG Illustration" class="img-fluid">
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-6" id="description">
-                            <h1>Event and Discussion Board</h1>
-                            <p>Create events and discussion boards with friends and professionals</p>
+                            <h1 id="multiple">Event and Discussion Board</h1>
+                            <p id="multiple">Create events and discussion boards with friends and professionals</p>
                         </div>
                     </div>
                 </div>
@@ -50,8 +50,8 @@
                             <img src="@/assets/svgs/fourth.svg" alt="First SVG Illustration" class="img-fluid">
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-6" id="description">
-                            <h1>Be the first to know</h1>
-                            <p>Get updates about diseases outbreak and tips to protecting yourself and family</p>
+                            <h1 id="multiple">Be the first to know</h1>
+                            <p id="multiple">Get updates about diseases outbreak and tips to protecting yourself and family</p>
                         </div>
                     </div>
                     
@@ -62,16 +62,16 @@
                             <img src="@/assets/svgs/fifth.svg" alt="First SVG Illustration" class="img-fluid">
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-6" id="description">
-                            <h1>Resource Library</h1>
-                            <p>Looking for anything? Our resource library might be helpful</p>
+                            <h1 id="multiple">Resource Library</h1>
+                            <p id="multiple">Looking for anything? Our resource library might be helpful</p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row mt-4">
-                        <div class="col-sm-12 col-md-12 col-lg-12">
-                            <h1 class="text-center">Thank you for your time</h1>
-                            <p class="text-center">Kindly subscribe for more details on our first version release</p>
+                        <div class="col-sm-12 col-md-12 col-lg-12" id="last">
+                            <h1 class="text-center" id="multiple">Thank you for your time</h1>
+                            <p class="text-center" id="multiple">Kindly subscribe for more details on our first version release</p>
                         </div>
                     </div>
                 </div>
@@ -140,41 +140,53 @@
 
     /* Media query for 768 */
     @media screen and (min-width: 768px) {
+        #icon {
+            bottom: 2rem;
+        }
         img {
-            width: 322.49px;
+            width: 400px;
             height: 209.86px;
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            
         }
         #slider {
-            height: 61vh;
-            padding-top: 4rem;
-            padding-bottom: 4rem;
-            padding-right: 3rem;
-            padding-left: 4rem;
+            height: 80vh;
+            padding-top: 2rem;
+            padding-bottom: 5rem;
         }
         h1 {
             font-size: 40px;
-            text-align: center;
             line-height: 54.47px;
             margin-top: 2em;
             font-weight: 700;
             margin-bottom: 1.1em;
             font-family: 'Open Sans', sans-serif;
+            
         }
         p {
             margin-bottom: 4em;
-            font-size: 22px;
+            font-size: 17px;
             line-height: 29.96px;
             font-family: 'Open Sans', sans-serif;
             font-weight: 600;
             color: #535357;
+            width: 1000px;
+            padding-right: 400px;
+            padding-left: 60px;
+        }
+        
+        #multiple {
+            padding-right: 50px;
+            padding-left: 50px;
+            width: 700px;
+        }
+        #last {
             text-align: center;
+            padding: 0;
+            margin: 0 auto 5rem auto;
+            width: 100%;
         }
-        #description {
-            padding: 0 5rem;
-        }
+        
     }
 
     /* Media query for min-width 1025px */
@@ -189,7 +201,7 @@
             bottom: -25px;
         }
         #slider {
-            height: 61vh;
+            height: 51vh;
         }
         h1 {
             font-size: 40px;

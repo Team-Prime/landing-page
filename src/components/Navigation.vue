@@ -2,7 +2,7 @@
     <div>
             <!-- As a link -->
         <nav class="navbar navbar-light" id="navbar">
-            <a class="navbar-brand" href="#"><i class="fas fa-plus" id="icon"></i> HEALTHNOW</a>
+            <a class="navbar-brand" href="#"><i class="fas fa-plus mr-3 ml-3" id="icon"></i> HEALTHNOW</a>
         </nav>
 
         
@@ -28,15 +28,14 @@
         border-radius: 40px;
         background: #2A5FFC;
         color:white;
-        padding: 3px;
+        padding: 5px;
         font-size: 19px;
     }
     
     /* Media query for Navigation */
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 768px) {
          #navbar {
-            
-            padding-left: 16rem;
+            padding-left: 11em;
         }
     }
 </style>

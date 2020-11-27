@@ -61,9 +61,9 @@
     /* Footer 768px media query */
     @media screen and (min-width: 768px) {
         .footer {
-            height: 319px;
+            height: 266px;
             background: black;
-            padding-top: 3rem;
+            padding-top: 2rem;
             text-align: center;
         }
 
@@ -72,7 +72,7 @@
             font-size: 40px;
             color: white;
             line-height: 34.05px;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             font-weight: 700;
             font-style: normal;
         }
@@ -95,62 +95,21 @@
             font-size: 22px;
             border: none;
         }
-        p {
-            color: #FFFFFF;
-            /* margin-top: 1rem; */
-            font-size: 18.75px;
-        }
-        hr {
-            display: none;
-        }
-    }
-
-
-
-    /* Footer 768px media query */
-    @media screen and (min-width: 1025px) {
-        .footer {
-            height: 319px;
-            background: black;
-            padding-top: 3rem;
-            text-align: center;
-        }
-
-        h1 {
-            text-align: center;
-            font-size: 40px;
+        button:hover {
             color: white;
-            line-height: 34.05px;
-            margin-bottom: 50px;
-            font-weight: 700;
-            font-style: normal;
-        }
-        input[type="email"] {
-            margin: 0 auto;
-            width: 32rem;
-            background: #000000;
-            color: white;
-            padding: 1.8em 2em;
-        }
-        button {
-            position:relative;
-            bottom: 3.9rem;
-            left: 10rem;
-            color: white;
-            background: #2A5FFC;
-            margin: 1px auto;
-            padding: .7em 2.2em;
-            font-family: 'Roboto', sans-serif;
-            font-size: 22px;
-            border: none;
         }
         p {
             color: #FFFFFF;
             /* margin-top: 1rem; */
             font-size: 18.75px;
+            margin-top: -2rem;
         }
         hr {
-            display: none;
+            width: 11rem;
         }
     }
+
+
+
+    
 </style>
