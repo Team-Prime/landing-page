@@ -3,9 +3,11 @@
         <div class="footer">
             <h1>Subscribe to our newsletter</h1>
 
-            <input type="email" name="email" class="form-control" placeholder="enter email address">
-            <button class="btn">Subscribe</button>
-
+            <div v-if="!showSuccess">
+                <input type="email" name="email" class="form-control" placeholder="enter email address" v-model="info.email">
+                <button class="btn" @click="submitForm()">Subscribe</button>
+            </div>
+            <h3 class="text-white mb-5" v-else>Thank you for subscribing!</h3>
             <p>We will let you know when we launch!</p>
 
             <hr>
@@ -14,8 +16,29 @@
 </template>
 
 <script>
+const {db} = require('../firebase/firebaseConfig')
+
+
     export default {
-        
+        data() {
+            return {
+                info: {
+                    email: ''
+                },
+                showSuccess: false
+            }
+        },
+        methods: {
+            submitForm() {
+                db.collection('email').add(this.info).then(() => {
+                    console.log("Email added successfully")
+                    this.info.email = ""
+                    this.showSuccess = true
+                }).catch(err => {
+                    console.log("An error occured: " + err)
+                })
+            }
+        },
     }
 </script>
 

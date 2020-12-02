@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" id="col-1">
                     <h1 class="mb-4">One of Us?</h1>
-                    <p class="mb-4">Enjoy inspiring stories, get first hand health awareness, updates on diseases updates and safety practices. Login to continue.</p>
+                    <p class="mb-4">Enjoy inspiring stories, get first hand health awareness, updates on diseases outbreaks and safety practices. Login to continue.</p>
                     <router-link to="/login" id="button">Sign In</router-link>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" id="col-2">
